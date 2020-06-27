@@ -1,0 +1,138 @@
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-liyul"
+Entitlement-based licensing initiated
+[LicensingClient] Licenses updated successfully
+
+LICENSE SYSTEM [2020625 17:59:29] Next license update check is after 2020-06-26T07:15:54
+
+Built from '2020.1/staging' branch; Version is '2020.1.0b12 (9e6726e6ce12) revision 10381094'; Using compiler version '192227905'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'zh' Physical Memory: 16330 MB
+[Licensing::Module] Serial number assigned to: "F4-VZTH-HQGJ-NEQ3-BH73-XXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.1.0b12\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/unity/DOTS2020
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55120
+Successfully changed project path to: D:/unity/DOTS2020
+D:/unity/DOTS2020
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 55.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.1.0b12 (9e6726e6ce12)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.1.0b12/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/unity/DOTS2020/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
+    Vendor:   
+    VRAM:     8031 MB
+    Driver:   26.21.14.3650
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.1.0b12/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.1.0b12/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.1.0b12/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.1.0b12/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001711 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 30.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Registering precompiled user dll's ...
+Registered in 0.082609 seconds.
+Platform modules already initialized, skipping
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\unity\DOTS2020\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 35.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.552 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3475 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.5 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3868.
+Total: 2.735700 ms (FindLiveObjects: 0.401000 ms CreateObjectMapping: 0.167000 ms MarkObjects: 2.130000 ms  DeleteObjects: 0.036000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/SceneDependencyCache/85d9cffe2e519debf79c780e421750bc.sceneWithBuildSettings
+  artifactKey: Guid(85d9cffe2e519debf79c780e421750bc) Importer(2089858483,52bed625d08a7023a15481c3fbd73797)
+Start importing Assets/SceneDependencyCache/85d9cffe2e519debf79c780e421750bc.sceneWithBuildSettings using Guid(85d9cffe2e519debf79c780e421750bc) Importer(2089858483,52bed625d08a7023a15481c3fbd73797) Opening scene 'Assets/Scenes/SampleScene/SubScene.unity additively'
+Loaded scene 'Assets/Scenes/SampleScene/SubScene.unity'
+	Deserialize:            0.288 ms
+	Integration:            0.910 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       18.975 ms
+	Total Operation Time:   20.175 ms
+ -> (target hash: '6ea74cb39dbd416fc245f7aab4ea93c7') in 0.321754 seconds
+  Import took 0.327241 seconds .
+
+========================================================================
+Received Prepare
+Reloading mono domain
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.1.0b12/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001531 seconds.
+Symbol file LoadedFromMemory doesn't match image D:\unity\DOTS2020\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 33.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.279 seconds
+Registering precompiled user dll's ...
+Registered in 0.083315 seconds.
+Platform modules already initialized, skipping
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\unity\DOTS2020\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.278 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.9 MB.
+System memory in use after: 73.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3876.
+Total: 6.563500 ms (FindLiveObjects: 0.821300 ms CreateObjectMapping: 0.347300 ms MarkObjects: 5.362600 ms  DeleteObjects: 0.031100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 294.744400 seconds.
+  path: Assets/SceneDependencyCache/85d9cffe2e519debf79c780e421750bc.sceneWithBuildSettings
+  artifactKey: Guid(85d9cffe2e519debf79c780e421750bc) Importer(2089858483,52bed625d08a7023a15481c3fbd73797)
+Start importing Assets/SceneDependencyCache/85d9cffe2e519debf79c780e421750bc.sceneWithBuildSettings using Guid(85d9cffe2e519debf79c780e421750bc) Importer(2089858483,52bed625d08a7023a15481c3fbd73797) Opening scene 'Assets/Scenes/SampleScene/SubScene.unity additively'
+Loaded scene 'Assets/Scenes/SampleScene/SubScene.unity'
+	Deserialize:            0.693 ms
+	Integration:            1.398 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       18.991 ms
+	Total Operation Time:   21.085 ms
+ -> (target hash: '8ec9a92b8411ff50cdd20c7a8a207c19') in 0.237007 seconds
+  Import took 0.242893 seconds .
+
