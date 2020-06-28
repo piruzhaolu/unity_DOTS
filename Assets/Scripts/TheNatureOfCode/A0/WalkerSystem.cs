@@ -4,7 +4,6 @@ using Unity.Transforms;
 
 namespace TheNatureOfCode
 {
-    [DisableAutoCreation]
     public class WalkerSystem:SystemBase
     {
       
@@ -30,14 +29,14 @@ namespace TheNatureOfCode
         protected override void OnUpdate()
         {
             var deltaTime = Time.DeltaTime;
-            
+
             Entities.ForEach((ref WalkerNoise walker, ref Translation translation) =>
             {
-                var x = noise.snoise(new float2(walker.Value.x,0));
-                var y = noise.snoise(new float2(0,walker.Value.y));
-                translation.Value += new float3(x, 0, y) * deltaTime*10;
-                
-                walker.Value+=new float2(0.1f,0.1f);
+                var x = noise.snoise(new float2(walker.Value.x, 0));
+                var y = noise.snoise(new float2(0, walker.Value.y));
+                translation.Value += new float3(x, 0, y) * deltaTime * 10;
+
+                walker.Value += new float2(0.1f, 0.1f);
             }).Schedule();
 
         }
