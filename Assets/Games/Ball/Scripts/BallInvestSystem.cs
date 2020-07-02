@@ -1,4 +1,5 @@
-﻿using Unity.Entities;
+﻿using TMPro;
+using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics.Authoring;
 using Unity.Transforms;
@@ -7,9 +8,10 @@ using Unity.Physics;
 
 namespace Games.Ball
 {
-    public class BallResetSystem:SystemBase
+    public class BallInvestSystem:SystemBase
     {
 
+        public int InitValue = 30;
         protected override void OnStartRunning()
         {
             var e = GetEntityQuery(ComponentType.ReadOnly<Ball>()).GetSingletonEntity();
@@ -28,9 +30,8 @@ namespace Games.Ball
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                if (InitValue == 0) return;
                 var e = _entityQuery.GetSingletonEntity();
-                // var e = GetEntityQuery(ComponentType.ReadOnly<Ball>(), ComponentType.ReadOnly<Prefab>())
-                //     .GetSingletonEntity();
                 
                 var inst = EntityManager.Instantiate(e);
                 EntityManager.RemoveComponent<Prefab>(inst);
@@ -39,22 +40,9 @@ namespace Games.Ball
                 newPv.Linear = new float3();
                 EntityManager.SetComponentData(inst,newPv);
                 EntityManager.SetComponentData(inst,new Translation{Value = new float3(5.28f, -10.59f, -22.53f)});
-                
+                InitValue--;
+                GameObject.Find("Amount").GetComponent<TMP_Text>().text = InitValue.ToString();
 
-                // Entities
-                //     .WithAll<Ball>()
-                //     .ForEach((Entity e, ref PhysicsVelocity pv, ref Translation translation) =>
-                //     {
-                //         
-                //         var inst = base.EntityManager.Instantiate(e);
-                //
-                //         var newPv = pv;
-                //         newPv.Linear = new float3(0);
-                //         EntityManager.SetComponentData(inst,newPv);
-                //         var newPos = translation;
-                //         newPos.Value = new float3(5.28f, -10.59f, -22.53f);
-                //         EntityManager.SetComponentData(inst,newPos);
-                //     }).Run();
             }
         }
     }

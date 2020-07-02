@@ -51,13 +51,34 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Games\Ball\Scripts\Ball.cs" />
-     <Compile Include="Assets\Games\Ball\Scripts\BallResetSystem.cs" />
+     <Compile Include="Assets\Games\Ball\Scripts\BallInvestSystem.cs" />
+     <Compile Include="Assets\Games\Ball\Scripts\BallRemoveSystem.cs" />
+     <Compile Include="Assets\Games\Ball\Scripts\GameData.cs" />
+     <Compile Include="Assets\Games\Ball\Scripts\UISystem.cs" />
      <Compile Include="Assets\Games\Ball\Scripts\Wall.cs" />
      <Compile Include="Assets\Games\Ball\Scripts\WallMoveSystem.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\TheNatureOfCode\A0\Walker.cs" />
      <Compile Include="Assets\Scripts\TheNatureOfCode\A0\WalkerNoise.cs" />
      <Compile Include="Assets\Scripts\TheNatureOfCode\A0\WalkerSystem.cs" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
  <HintPath>D:/github/DOTS2020/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
