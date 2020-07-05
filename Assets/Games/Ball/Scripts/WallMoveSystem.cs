@@ -22,7 +22,6 @@ namespace Games.Ball
                         newValue.x = 20f;
                         translation.Value = newValue;
                     }
-
                     translation.Value -= new float3(1f, 0, 0) * deltaTime;
 
                 }).Schedule();

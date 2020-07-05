@@ -8,7 +8,6 @@ namespace Games.Ball
 {
     public class BallRemoveSystem:SystemBase
     {
-    
         
         EndSimulationEntityCommandBufferSystem m_EndSimulationEcbSystem;
         
@@ -17,7 +16,6 @@ namespace Games.Ball
             m_EndSimulationEcbSystem = World.GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
         }
 
-        public int Count = 0;
 
         protected override void OnUpdate()
         {
