@@ -11,11 +11,8 @@ namespace Games.Ball
     public class BallInvestSystem:SystemBase
     {
 
-        public int InitValue = 30;
         protected override void OnStartRunning()
         {
-            var e = GetEntityQuery(ComponentType.ReadOnly<Ball>()).GetSingletonEntity();
-            EntityManager.AddComponent<Prefab>(e);
             _entityQuery = GetEntityQuery(new EntityQueryDesc
             {
                 All = new[] {ComponentType.ReadOnly<Ball>(), ComponentType.ReadOnly<Prefab>()},
@@ -30,7 +27,8 @@ namespace Games.Ball
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (InitValue == 0) return;
+                var gameData = GetSingleton<GameData>();
+                if (gameData.BallCount == 0) return;
                 var e = _entityQuery.GetSingletonEntity();
                 
                 var inst = EntityManager.Instantiate(e);
@@ -40,8 +38,10 @@ namespace Games.Ball
                 newPv.Linear = new float3();
                 EntityManager.SetComponentData(inst,newPv);
                 EntityManager.SetComponentData(inst,new Translation{Value = new float3(5.28f, -10.59f, -22.53f)});
-                InitValue--;
-                GameObject.Find("Amount").GetComponent<TMP_Text>().text = InitValue.ToString();
+                gameData.BallCount--;
+                SetSingleton(gameData);
+                
+                GameObject.Find("Amount").GetComponent<TMP_Text>().text = gameData.BallCount.ToString();
 
             }
         }

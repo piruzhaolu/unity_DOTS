@@ -57,7 +57,7 @@
      <Compile Include="Assets\Games\Ball\Scripts\GameInitSystem.cs" />
      <Compile Include="Assets\Games\Ball\Scripts\UISystem.cs" />
      <Compile Include="Assets\Games\Ball\Scripts\Wall.cs" />
-     <Compile Include="Assets\Games\Ball\Scripts\WallMoveSystem.cs" />
+     <Compile Include="Assets\Games\Ball\Scripts\WallSystem.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\TheNatureOfCode\A0\Walker.cs" />
      <Compile Include="Assets\Scripts\TheNatureOfCode\A0\WalkerNoise.cs" />

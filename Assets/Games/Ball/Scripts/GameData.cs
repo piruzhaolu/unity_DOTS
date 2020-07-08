@@ -6,5 +6,6 @@ namespace Games.Ball
     public struct GameData:IComponentData
     {
         public int Value;
+        public int BallCount;
     }
 }

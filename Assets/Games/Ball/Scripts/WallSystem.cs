@@ -4,10 +4,8 @@ using Unity.Transforms;
 
 namespace Games.Ball
 {
-    
-    public class WallMoveSystem:SystemBase
+    public class WallSystem:SystemBase
     {
-        
         
         protected override void OnUpdate()
         {
@@ -28,4 +26,7 @@ namespace Games.Ball
 
         }
     }
+    
+    
+    
 }
